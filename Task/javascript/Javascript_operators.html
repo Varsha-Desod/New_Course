@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>javascript_Operators</title>
+  </head>
+  <body>
+    <script>
+      // Part A: Arithmatic Operators
+
+      //Declare two numbers a = 12, b = 5. Print sum, difference, product, quotient, and remainder.
+
+      let a = 12,
+        b = 5;
+      let sum = a + b;
+      console.log(sum);
+
+      let difference = a - b;
+      console.log(difference);
+
+      let product = a * b;
+      console.log(product);
+
+      let quotient = a / b;
+      console.log(quotient);
+
+      let c = a + b;
+      console.log(c);
+      let remainder = c % b;
+      console.log(remainder);
+
+      //Use the exponentiation operator to calculate 5² and 3³.
+      let u = 5,
+        y = 3;
+      let z = u ** 2;
+      console.log(z);
+
+      let w = y ** 3;
+      console.log(w);
+
+      //Create a variable num = 20. Apply increment (++) and decrement (--) operators step by step
+      let num = 20;
+      num++;
+      console.log(num);
+
+      num--;
+      console.log(num);
+
+      //Part B: Assignment Operators
+
+      //Create a variable x = 50. Use +=, -=, *=, /=, %= operators on x. Print after each step
+      let x = 50;
+      console.log((x += 2));
+      console.log((x -= 2));
+      console.log((x *= 2));
+      console.log((x /= 2));
+      console.log((x %= 2));
+
+      //Start with score = 100. Add 10 using +=, subtract 20 using -=, then divide by 2 using /=. Print final score.
+      let score = 100;
+      score += 10;
+      console.log(score);
+
+      score -= 20;
+      console.log(score);
+
+      score /= 2;
+      console.log(score);
+
+      //Part C: Comparison Operators
+      //Declare age1 = 25, age2 = "25". Compare using == and ===. Print results.
+
+      let age1 = 25,
+        age2 = "25";
+      console.log(age1 == age2);
+
+      console.log(age1 === age2);
+
+      //Write a program to check if marks = 35 is greater than or equal to 40. If true → print “Pass”, else → “Fail”.
+
+      let marks = 35;
+      if (marks >= 40) {
+        console.log("Pass");
+      } else {
+        console.log("Fail");
+      }
+
+      // Take p = 15, q = 30. Print results of p > q, p < q, p >= q, p <= q, p != q, p !== q.
+
+      let p = 15,
+        q = 30;
+
+      console.log(p > q);
+      console.log(p < q);
+      console.log(p >= q);
+      console.log(p <= q);
+      console.log(p != q);
+      console.log(p !== q);
+
+      // Part D: Logical Operators
+
+      //Create isStudent = true, hasIDCard = false. Use &&, ||, and ! to check exam hall eligibility.
+
+      let isStudent=true , hasIDCard=false;
+     console.log(isStudent&&hasIDCard);
+
+     console.log(isStudent||hasIDCard);
+
+     console.log(!isStudent);
+     
+
+      // Check if temperature = 32. If between 30 and 40 → print , else “Normal”.
+
+      let temperature = 32;
+      if (temperature >= 30 && temperature <= 40) {
+        console.log("Its Hot");
+      } else {
+        console.log("Normal");
+      }
+
+      // Create username = "admin", password = "1234".  If both are correct → print “Login Successful”, else → print “Login Failed”.
+
+      let username = "admin";
+      password = "1234";
+      if (username === "admin" && password === "1234") {
+        console.log("Login Successful");
+      } else {
+        console.log("Login Failed");
+      }
+
+      //Part E: Mixed-Type Operator Tasks
+
+      // Add 10 + "20". Print result and type.
+
+      let a1 = 10,
+        a2 = "20";
+      console.log(a1 + a2);
+
+      //Subtract "50" (string) from 20. Print result.
+
+      let b1 = 20,
+        b2 = "50";
+      console.log(b1 - b2);
+
+      // Multiply true with 5. Print result.
+
+      let c1 = true * 5 ;
+      console.log(c1);
+
+      //Divide 0 / 10 and 10 / 0. Print both results.
+
+      let number=0/10;
+      let number1=10/0;
+      console.log(number);
+      console.log(number1);
+    </script>
+  </body>
+</html>

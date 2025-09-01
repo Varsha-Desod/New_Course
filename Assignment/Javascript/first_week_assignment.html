@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>first_week_assignment</title>
+  </head>
+  <body>
+    <script>
+      // Part A: Basics & Variables (1–10)
+
+      //Print "Hello JavaScript" in console.
+      console.log("Hello JavaScropt");
+
+      //Declare a variable name and store your name, then print it.
+      let name = "Rohan";
+      console.log();
+
+      //Swap two numbers using a temporary variable.
+      let a = 10,
+        b = 20,
+        temp;
+      console.log("before swap");
+      console.log("a = " + a);
+      console.log("b = " + b);
+
+      console.log("after swap");
+      temp = a;
+      a = b;
+      b = temp;
+      console.log("a = " + a);
+      console.log("b = " + b);
+
+      //Swap two numbers without using a temporary variable.
+      let a1 = 10,
+        b1 = 20;
+      console.log("before swap");
+      console.log("a1 = " + a1);
+      console.log("b1 = " + b1);
+
+      console.log("after swap");
+      a1 += b1;
+      console.log("after adding a1+b1 " + a1);
+      console.log("swaping");
+      b1 = a1 - b1;
+      a1 = a1 - b1;
+      console.log("a1 = " + a1);
+      console.log("b1 = " + b1);
+
+      //Declare constants for PI and gravity, then display them.
+      const PI = 3.14;
+      const gravity = "9.8 m/s2";
+      console.log(PI);
+      console.log(gravity);
+
+      //Show difference between let, const, and var.
+      var x = 5;
+      var y = 3;
+      console.log("x = " + x);
+      console.log("y = " + y);
+      x = 8;
+      console.log("x = " + x);
+      console.log(
+        "In Var we can redclear and resign the value and it is a goble scrop its mean we can call anywhere in page. That why ES6 is not use var"
+      );
+
+      let x1 = 5;
+      let y1 = 3;
+      console.log("x1 = " + x1);
+      console.log("y1 = " + y1);
+      x1 = 8;
+      console.log("x1 = " + x1);
+      console.log(
+        "In Let we cannot redclear and but we can resign the value and it is a block scrop its mean we can,t callanywhere in page. In place of var ES6 use let"
+      );
+      console.log("what happend when we redclear varible in let");
+      console.log(
+        "Its show syntax error {Uncaught SyntaxError: Identifier 'x1' has already been declared (at first_week_assignment.html:70:13)}"
+      );
+
+      const num = 3.14;
+      console.log("num = " + num);
+      //const num=3.16;
+      //num=3.15;
+      console.log("num = " + num);
+      console.log(
+        "In Let we cannot redclear and resign the value and it is a block scrop its mean we can,t callanywhere in page."
+      );
+      console.log("What happened when we redclear or reassign");
+      console.log(
+        "Its show syntax error {Uncaught SyntaxError: Identifier 'num' has already been declared}"
+      );
+      console.log("What happened when we only ressign");
+      console.log(
+        "Its show type error {Uncaught TypeError: Assignment to constant variable.}"
+      );
+
+      //Store your age in a variable and check its type.
+      let age = 12;
+      console.log(age);
+      console.log(typeof age);
+
+      //Concatenate first name and last name into a full name.
+      let first_name = "Rohan";
+      let last_name = "Chouhan";
+      console.log(first_name + last_name);
+
+      // Declare variables of all basic data types (string, number, boolean, null, undefined) and display them.
+      let name1 = "Priya";
+      console.log(typeof name1);
+      let number = 45896;
+      console.log(typeof number);
+      let value = true;
+      console.log(typeof value);
+      let user = null;
+      console.log(typeof user);
+      let pass;
+      console.log(typeof pass);
+
+      //Reassign a let variable and explain why const cannot be reassigned.
+      let a2 = 5;
+      let b2 = 3;
+      console.log("a2 = " + a2);
+      console.log("b2 = " + b2);
+      a2 = 8;
+      console.log("a2 = " + a2);
+      console.log(
+        "In Let we cannot redclear and but we can resign the value and it is a block scrop its mean we can,t callanywhere in page. In place of var ES6 use let"
+      );
+      console.log("what happend when we redclear varible in let");
+      console.log(
+        "Its show syntax error {Uncaught SyntaxError: Identifier 'x1' has already been declared (at first_week_assignment.html:70:13)}"
+      );
+
+      const num1 = 3.14;
+      console.log("num1 " + num1);
+      //const num1=3.16;
+      //num1=3.15;
+      console.log("num1 = " + num1);
+      console.log(
+        "In Let we cannot redclear and resign the value and it is a block scrop its mean we can,t callanywhere in page."
+      );
+      console.log("What happened when we redclear");
+      console.log(
+        "Its show syntax error {Uncaught SyntaxError: Identifier 'num' has already been declared}"
+      );
+      console.log("What happened when we only ressign");
+      console.log(
+        "Its show type error {Uncaught TypeError: Assignment to constant variable.}"
+      );
+
+      //Part B: Data Types & Conversion (11–15)
+      //Convert a number to a string using String() and .toString().
+         let numb=1452;
+         console.log(numb.toString());
+         console.log(String(numb));
+           
+      //Convert a string "123" to a number using Number() and parseInt().
+      let numb1="123";
+      console.log(Number(numb1));
+      console.log(parseInt("123"));
+      
+      //Show the difference between == and ===.
+      let numb2=4;
+      let numb3=4;
+      let equal=numb2==numb3;
+      console.log(equal);
+      let equal1=numb2===numb3;
+      console.log(equal1);
+      
+      //Check if "Hello" is of type string.
+      let srt3="Hello";
+      if(typeof "Hello" === "string"){
+         console.log("this value is string");
+      }else{
+        console.log("This value is not string");
+        
+      }
+      
+      //Demonstrate typeof operator with all data types.
+      let name2 = "Hello";
+      let age2 = 42;
+      let A = true;
+      let user1 = null;
+      let pass1;
+
+      console.log(typeof name);
+      console.log(typeof age);
+      console.log(typeof A);
+      console.log(typeof user1);
+      console.log(typeof pass1);
+      
+
+      //Part C: String Methods (16–25)
+
+      //Find the length of "JavaScript".
+
+      //Convert "hello world" into uppercase.
+      let case1="hello world";
+      console.log(case1.toUpperCase());
+      
+      //Convert "HELLO WORLD" into lowercase.
+      let case2="hello world";
+      console.log(case2.toLowerCase());
+
+      //Extract the first 4 characters from "Programming".
+      let case3="Programming";
+      console.log(case3.slice(0,4));
+      
+      //Replace "Java" with "Type" in "JavaScript".
+      let case4="JavaScript";
+      console.log(case4.replace("Java","Type"));
+      
+      //Find the index of "Script" in "JavaScript".
+      let case5="JavaScript";
+      console.log(case5.indexOf("Script"));
+      
+      //Check if "world" exists in "Hello world".
+      let case6="Hello world";
+      console.log(case6.includes("world"));
+      
+      //Trim extra spaces from " JS Basics ".
+      let case7=" JS Basics ";
+      console.log(case7.trim());
+      
+      //Split "Apple, Banana, Mango" into an array.
+      let case8="Apple, Banana, Mango";
+      console.log(case8.split(","));
+      
+      //Concatenate two strings using .concat().
+      let nam="Gopal";
+      let nam1="Nath";
+      console.log(nam.concat(nam1));
+      
+     
+      //Part D: Number & Math Methods (26–35)
+
+      //Round 4.7 using Math.round().
+      let math_round=Math.round(4.7);
+      console.log(math_round);
+      
+      //Use Math.floor(9.8) and Math.ceil(9.2).
+      let math_floor=Math.floor(9.8);
+      console.log(math_floor);
+      let math_ceil=Math.ceil(9.2);
+      console.log(math_ceil);
+      
+      //Generate a random number between 0 and 1.
+      let random_number=Math.random(0,1)
+      console.log(random_number);
+    
+      //Generate a random number between 1 and 100.
+      let random_number1=Math.random(1,100)
+      console.log(random_number1);
+      
+      //Find the maximum and minimum from (10, 5, 20, 3).
+      const max=Math.max(10 , 5 , 20 , 3);
+      console.log(max);
+      const min=Math.min(10 , 5 , 20 , 3);
+      console.log(min);
+      
+      //Find square root of 64.
+      const square=Math.sqrt(64);
+      console.log(square);
+      
+      //Find absolute value of -25.
+      const ab=Math.abs(-25);
+      console.log(ab);
+      
+      //Convert a float 45.6789 into 2 decimal places.
+      const float= 45.6789; 
+      const fixed_float=float.toFixed(2);
+      console.log(fixed_float);
+
+      //Demonstrate isNaN() with different inputs.
+      console.log(isNaN("Abhijit"));
+      console.log(isNaN(1234));
+      
+      //Use Math.pow(2, 5) to calculate 2⁵.
+      const power=Math.pow(2,5);
+      console.log(power);
+      
+
+      //Part E: Operators (36–45)
+
+      //Add two numbers using + operator.
+      let var1=5; var2=8;
+      let var3=var1+var2;
+      console.log(var3);
+      
+      //Use modulus % operator to find remainder of 25 ÷ 4.
+      let num2=25;
+      let num3=4;
+      let num4=num2+num3;
+      let remainder1=num4%num3;
+      console.log("remainder:- "+remainder1);
+      
+      //Demonstrate ++ pre-increment and post-increment.
+      let val=12;
+      console.log("value of "+val);
+      ++val;
+      console.log("pre increment "+val);1
+      val++;
+      console.log("post increment "+val);
+      
+      //Use comparison operators to check if 10 > 5.
+      let val1=10;
+      let val2=5;
+      let val3=val1>val2;
+      console.log("greater value is "+val3);
+      
+      //Check if two strings "JS" and "JS" are equal.
+      let str="JS";
+      let str1="JS";
+      let str2="JS"=="JS";
+      console.log(str2);
+      
+      //Use logical && to check if 5 > 2 and 10 > 5.
+      let q=5 , w=2 , e=10 ;
+         console.log(q>w && e>q);
+     
+      //Use logical || to check if either condition is true.
+      let q1=5 , w1=2 , e1=10 ;
+         console.log(q1>w1 || e1>q1);
+     
+      //Use logical ! to reverse a boolean value.
+      let my_name="Gopal"
+      console.log(!my_name);
+      
+      //Demonstrate += operator with a variable.
+      let val4=8;
+      val4+=4;
+      console.log(val4);
+      
+      //Write a small expression combining arithmetic and logical operators.
+       let q2=5 , w2=2 , e2=10 , r2=8 ;
+         console.log(q1+w1 ==7 || e1*r2 ==74);
+     
+
+      //Part F: Conditionals (46–50)
+
+      //Write a program to check if a number is positive, negative, or zero.
+      /*let given_num=prompt("Enter the number.");
+      if(given_num>0){
+        console.log("Your given number is positive. "+given_num); 
+      }else if(given_num<0){
+        console.log("Your given number is negative. "+given_num); 
+      }else{
+        console.log("Your given number is zero.");  
+      }*/
+
+      //Check if a number is even or odd.
+      /*let given_value=prompt("Enter the number.");
+      let remainder=given_value%2;
+      if(remainder==0){
+        console.log("Given value is even. "+given_value); 
+      }else{
+        console.log("Given value is Odd."+given_value);  
+      }*/
+
+      //Check if a person is eligible to vote (age ≥ 18).
+      /*let person_age = prompt("Enter your age");
+      if (person_age >= 18) {
+        console.log("You are eligible to vote. Your age is:- " + person_age);
+      } else {
+        console.log("You are not eligible to vote. Your age is:- " + person_age);
+      }*/
+
+      //Write a program to find the largest of two numbers.
+      let first_num=45;
+      let second_num=42;
+      if(first_num>second_num){
+        console.log("First num is largest."+first_num); 
+      }else{
+        console.log("Second num is largest. "+second_num);
+      }
+
+      //Write a program to find the largest of three numbers.
+      let first_num1=12;
+      let second_num1=10;
+      let third_num1=15;
+      if(first_num1>second_num1 && first_num1>third_num1){
+        console.log("Frist num is largest. "+first_num1);
+      }else if(second_num1>first_num1 && second_num1>third_num1){
+        console.log("Second num is largest. "+second_num1);
+      }else if(third_num1>first_num1 && third_num1>second_num1){
+        console.log("Third num is largest. "+third_num1);        
+      }else{
+        console.log("Invaild Result");        
+      }
+      
+    </script>
+  </body>
+</html>

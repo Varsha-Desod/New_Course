@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid-task2</title>
+    <style>
+        p{
+            text-align: center;
+            font-size: 48px;
+        }
+        .grid{
+            display: grid;
+            grid-template-columns: 100px 100px 100px 100px 100px;
+            grid-template-rows: 100px 100px 100px 100px 100px 100px 100px 100px ;
+            row-gap: 10px;
+            column-gap: 10px;
+        }
+        img{
+            height: 100%;
+            width: 100%;
+        }
+        #img1{
+           grid-column: 1;
+           grid-row-start: 1;
+           grid-row-end: 2; 
+        }
+        #img2{
+            grid-column: 2;
+            grid-row-start: 1;
+            grid-row-end: 1.5;
+        }
+    </style>
+</head>
+<body>
+    <section>
+        <div>
+            <p> Mosaic Veiw </p>
+        </div>
+        <div class="grid">
+        <img src="./assest/image/download.jpg" alt="" id="img1" title="1">
+        <img src="./assest/image/download1.jpeg" alt="" id="img2" title="2">
+        <img src="./assest/image/download2.jpeg" alt="" id="img3" title="3">
+        <img src="./assest/image/download3.jpg" alt="" id="img4" title="4">
+        <img src="./assest/image/download4.jpg" alt="" id="img5" title="5">
+        <img src="./assest/image/download5.jpg" alt="" id="img6" title="6">
+        <img src="./assest/image/download6.jpeg" alt="" id="img7" title="7">
+        <img src="./assest/image/download2.jpeg" alt="" id="img8" title="8">
+        <img src="./assest/image/download4.jpg" alt="" id="img9" title="9">
+        <img src="./assest/image/download.jpg" alt="" id="img10" title="10">
+        <img src="./assest/image/download1.jpeg" alt="" id="img11" title="11">
+        <img src="./assest/image/download2.jpeg" alt="" id="img12" title="12">
+        <img src="./assest/image/download3.jpg" alt="" id="img13" title="13">
+        <img src="./assest/image/download4.jpg" alt="" id="img14" title="14">
+        <img src="./assest/image/download5.jpg" alt="" id="img15" title="15">
+        <img src="./assest/image/download6.jpeg" alt="" id="img16" title="16">
+        <img src="./assest/image/download4.jpg" alt="" id="img17" title="17">
+        <img src="./assest/image/download6.jpeg" alt="" id="img18" title="18">  
+        </div>
+    </section>
+</body>
+</html>

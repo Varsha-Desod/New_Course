@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid-task1</title>
+    <style>
+       /* section{
+            background-color: yellowgreen;
+            height: 40px;
+            border: 2px solid black; 
+        }*/
+         .grid{
+            display: grid;
+            grid-template-columns: 50px 50px 50px 50px 50px 50px 50px 50px 50px 50px ;
+            grid-template-rows: 50px 50px 50px 50px ;
+            row-gap: 20px;
+            column-gap: 40px;
+        }
+        #box1{
+            background-color: yellowgreen;
+            height: 40px;
+            border: 2px solid black; 
+           grid-column: 1;
+           grid-row: 1; 
+        }
+        #box2{
+           background-color: yellowgreen;
+            height: 40px;
+            border: 2px solid black; 
+           grid-column-start: 3;
+           grid-column-end: 9;
+           grid-row: 1; 
+        }
+        #box3{
+          background-color: yellowgreen;
+            height: 40px;
+            border: 2px solid black; 
+            grid-column: 10;
+            grid-row: 1;   
+        }
+    </style>
+</head>
+<body>
+    <section>
+          <div id="box1"></div>
+          <div id="box2"></div>
+          <div id="box3"></div>
+          <div class="box4"></div>
+          <div class="box5"></div>
+          <div class="box6"></div>
+          <div class="box7"></div>
+          <div class="box8"></div>
+          <div class="box9"></div>
+          <div class="box10"></div>
+          <div class="box11"></div>
+          <div class="box12"></div>
+          <div class="box13"></div>
+</section>
+</body>
+</html>
