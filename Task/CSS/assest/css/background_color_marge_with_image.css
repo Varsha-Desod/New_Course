@@ -1,0 +1,6 @@
+section{
+     background-image: url("../image/download.jpg");
+}
+div{
+            background:linear-gradient(rgba(255, 0, 0, 0.579) , rgba(255, 255, 0, 0.634) , rgba(0, 0, 255, 0.612));
+        }
