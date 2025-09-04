@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+        button{
+            background-color:blue;
+            color:white;
+        }
+    </style>
+  </head>
+  <body>
+    <!-- <p id="parent" >Click on this!  </p>
+<button onclick="whenclick()">Click Me</button> -->
+    <p id="button">Double Click</p>
+    <button ondblclick="whendoubleclick()">Click Me</button>
+    <script>
+      //    let parent = document.getElementById("parent")
+
+      //     function whenclick() {
+      //        console.log("Hiii, This is a console log");
+      //     }
+
+      let  Create_button= document.getElementById("button")
+          button.style.color = "Black";
+      function whendoubleclick() {
+        button.classList.add("active");
+        console.log("Change color white to black");
+        
+      }
+    </script>
+  </body>
+</html>
