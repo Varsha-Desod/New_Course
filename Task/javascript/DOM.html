@@ -14,7 +14,7 @@
   <body>
     <!-- <p id="parent" >Click on this!  </p>
 <button onclick="whenclick()">Click Me</button> -->
-    <p id="button">Double Click</p>
+    <p id="click_button">Double Click</p>
     <button ondblclick="whendoubleclick()">Click Me</button>
     <script>
       //    let parent = document.getElementById("parent")
@@ -23,7 +23,11 @@
       //        console.log("Hiii, This is a console log");
       //     }
 
-      let  Create_button= document.getElementById("button")
+      let  Create_button= document.getElementById("click_button")
+      let get_element= document.createElement("button")
+         console.log(get_element);
+         
+          button.style.backgroundColor="Green";
           button.style.color = "Black";
       function whendoubleclick() {
         button.classList.add("active");
