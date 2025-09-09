@@ -1,0 +1,23 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+section{
+    border: 2px solid black;
+} 
+.home{
+    border:2px solid black;
+    width: 100px;    
+    margin: 10px 0 0 20px;
+}
+.about{
+    border: 2px solid black;
+     width: 150px;
+     margin: 10px 0 0 50px;
+}
+.logo{
+    border: 2px solid black;
+     width: 120px;
+     margin: 10px 20px 0 0;
+}
