@@ -1,0 +1,37 @@
+/* section{
+    background-color: black;
+} */
+.bor{
+    border: 1px solid ;
+}
+h1{
+    font-family:cursive ;
+}
+.d-flex{
+    display: flex;
+}
+.tlc{
+  text-align: center;
+}
+.box{
+   width: 25%;
+   margin: 0 auto;
+}
+fieldset{
+    border-left: none;
+    border-right: none;
+    border-bottom: none;
+    width:50%;
+    margin:0 auto;
+}
+img{
+    height: 20px;
+    width: 20px;
+}
+button{
+    width: 200px;
+    height: 40px;
+    border-radius: 15%;
+    background-color: rgba(0, 8, 255, 0.452);
+}
+
