@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>media_query</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        border: 1px solid;
+      }
+      .container-fluid {
+        padding-left: 15px;
+        padding-right: 15px;
+        width: 100%;
+      }
+      .container {
+        width: 1300px;
+        padding-left: 15px;
+        margin: 0 auto;
+        padding-right: 15px;
+      }
+      .row {
+        display: flex;
+        margin-left: -15px;
+        margin-right: -15px;
+      }
+      .col {
+        padding: 0 15px;
+        flex: 1 0 auto;
+      }
+      .justify-content {
+        justify-content: space-between;
+      }
+    </style>
+  </head>
+  <body>
+    <section>
+        <div><p>Simple data direct inside section</p></div>
+        <div>data</div>
+        <div>data</div>
+        <div><p>Simple data direct inside section</p></div>
+    </section>
+    <section>
+      <div class="container">simple data driect inside section>container</div>
+      <div class="container-fluid">
+        <p>simple data driect inside section>container-fluid</p>
+      </div>
+    </section>
+
+    <section>
+      <div class="container">
+      simple data driect inside section>container
+        <div class="row">
+          <div class="col">col</div>
+          <div class="col">col</div>
+          <div class="col">col</div>
+          <div class="col">col</div>
+        </div>
+        <div>testing</div>
+        <div class="row justify-content">
+          <div>col-10</div>
+          <div>col-10</div>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
